@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+body,td,th,p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333;
+	line-height: 1.5;
+}
+body {
+	background-color: #fdfdfd;
+	margin: 0;
+	position:relative;
+}
+ul, li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333;
+}
+a {
+	color: orange;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #3397db;
+	text-decoration: none;
+}
+a img{
+	border: none 0px #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 20px;
+  color: #86423e;
+  padding: 15px
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+#maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+}
+#footer {
+  background-color: #444;
+  color: #aaa;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* ====================== Navigation ====================== */
+nav {
+ /* width: 100%;*/
+  height: 80px;
+  background-color: #544a57;
+  text-align:center;
+  display: flex;
+}
+nav h1 {
+  margin: auto;
+}
+nav h1 a {
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 200;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+#breadcrumb {
+    padding: 10px 40px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+    margin: 0;
+    
+}
+
+/* Display list items side by side */
+#breadcrumb li {
+    display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+#breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+#breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+#breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/* ====================== Map ====================== */
+#map {
+  height: 400px;
+ /*width: 100%;*/
+  background-color: #ccc;
+}
+#map-container{
+    display: block;
+   /* width: 100%;*/
+ 
+  }
+
+/* ====================== Restaurant Filtering ====================== */
+.filter-options {
+  background-color: #dd8d78;
+ /* width: 100%;*/
+  height: 50%;;
+  align-items: center;
+  margin: auto;
+}
+.filter-options h2 {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+ 
+  margin: 15px 0px 5px 15px;
+}
+.filter-options select {
+  background-color: white;
+  border: 1px solid #fff;
+  font-family: Arial,sans-serif;
+  font-size: 11pt;
+  height: 35px;
+  letter-spacing: 0;
+  margin: 10px;
+  padding: 0 10px;
+  width: 200px;
+}
+
+/* ====================== Restaurant Listing ====================== */
+#restaurants-list {
+  background-color: #f3f3f3;
+  list-style: outside none none;
+  margin: 0;
+  padding: 30px 15px 60px;
+  text-align: center;
+  display: flex;
+ flex-direction:row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+#restaurants-list li {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  font-family: Arial,sans-serif;
+  margin: 15px;
+  min-height: 380px;
+  padding: 0 30px 25px;
+  text-align: left;
+  max-width: 470px;
+  width: 100%
+}
+#restaurants-list .restaurant-img {
+  background-color: #ccc;
+  display: block;
+  margin: 0;
+  max-width: 100%;
+ min-width: 100%;
+  min-height: 248px; 
+}
+#restaurants-list li h1 {
+  color: #f18200;
+  font-family: Arial,sans-serif;
+  font-size: 14pt;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+#restaurants-list p {
+  margin: 0;
+  font-size: 11pt;
+}
+#restaurants-list li a:focus,#restaurants-list li a:hover {
+  background-color: orange;
+}
+#restaurants-list li a {
+  background-color: 	#dd8d78;
+  border-bottom: 3px solid #eee;
+  color: #fff;
+  display: inline-block;
+  font-size: 10pt;
+  margin: 15px 0 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* ====================== Restaurant Details ====================== */
+.inside header {
+  width: 100%;
+}
+.inside #map-container {
+  background: white none repeat scroll 0 0;
+  max-height: 60%;
+  display: block;
+}
+.inside #map {
+  background-color: white;
+  max-height: 100%;
+  max-width: 100%;
+}
+.inside #footer {
+  bottom: 0;
+  max-width: 100%;
+}
+#restaurant-name {
+  /*width: 95%;*/
+  text-align: center;
+  color: #544a57;
+  font-family: Arial,sans-serif;
+  font-weight: 200;
+  letter-spacing: 0;
+  margin: 15px auto 15px auto;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+#restaurant-img {
+	width: 80%;
+  height: 40%;
+  margin: auto;
+  display: block;
+  max-width:100%;
+}
+#restaurant-address {
+  width: 90%;
+  font-size: 12pt;
+  margin: 10px auto;
+  text-align: center;
+}
+#restaurant-cuisine {
+  background-color: #ae625f;
+  color: white;
+  font-size: 12pt;
+  font-weight: 300;
+  letter-spacing: 10px;
+  margin: auto;
+  padding: 2px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+
+}
+#reviews-container {
+  margin: auto;
+}
+.review-title {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  color: #ad5f03;
+  font-size: 24pt;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+#reviews-list {
+  margin: 0;
+  padding: 0;
+}
+.review-name, .review-date, .review-rating {
+  font-weight: bold;
+  font-size: 20pt;
+}
+#reviews-list li {
+  margin: 10px auto 10px auto;
+  background-color: #fff;
+  display: block;
+  list-style-type: none;
+  width: 95%;
+}
+#reviews-list li p {
+  margin: 0px 0 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+#restaurant-hours {
+  background-color: #fff;
+ /* width: 40%;*/
+  margin: auto;
+  margin-bottom: 0;
+}
+#restaurant-hours td {
+  font-style: italic;
+  color: #544a57;
+  padding: 5px; 
+}
+/*Mobile Style*/
+@media only screen and (max-width: 300px) {
+	body {
+    background: lightgray;
+    }
+}
+@media only screen and (max-width: 480px) {
+	body {
+        background: lightgray;
+    }
+}
+/*Tablet Style*/
+@media only screen and  (min-width: 768px) {
+	body {
+        background: lightgray; 
+	}
+}
+/*Desktop Style*/
+
+@media only screen and (min-width: 1024px) {
+	body {
+        background: lightgray;   
+  }} 
